@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, "Segoe UI", Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .03em;
+    color: #111;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+}
+
+b {
+    font-weight: 600;
+    color: #111;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    color: #555555;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input {
+    font-family: system-ui, "Segoe UI", Ubuntu;
+    font-size: 16px;
+}
+
+.background-std {
+    background-color: #f8f8f8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    border: 1px solid #334ECD;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+
+.button-medium {
+    padding: 10px
+}
+
+.button-large {
+    padding: 20px 60px;
+}
+
+.button-primary {
+    background-color: #334ECD;
+    color: #ffffff;
+}
+
+.button-primary:hover {
+    background-color: #4b61ca;
+}
+
+.button-secondary {
+    color: #334ECD;
+    background-color: #fff;
+}
+
+.input {
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rounded-block {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.block { display: block }
+
+#login-button { display: none; }
+#subscription { display: none; }
+#user { display: none; }
+
+.header {
+    padding: 0 20px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.header a {
+    color: #111;
+}
+
+.breadcrumb {
+    padding: 0 20px;
+    height: 40px;
+}
+
+.breadcrumb a {
+    text-transform: capitalize;
+}
+
+.slash {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.logo-text {
+    font-weight: 600;
+    color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FF7466;
+}
+
+.icon {
+    font-size: 24px;
+    color: #334ECD;
+}
+
+.emphasis {
+    color: #334ECD;
+}
+
+.nav a {
+    color: #111;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.container { margin: 0 20px; }
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    width: 160px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.list li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    color: #111;
+}
+
+.breadcrumb a {
+    color: #888;
+}
+
+.right-side {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#project-popup {
+    display: none;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: 60px;
+}
+
+/*----- LAYOUT -----*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inline-flex { display: inline-flex }
+
+.center { justify-content: center; }
+
+.align-center { align-items: center; }
+
+.float-right {
+    margin-left: auto;
+}
+
+.col {
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.col:last-child { margin-right: 0; }
+
+.one { width: 70px; }
+.two { width: 160px; }
+.three { width: 250px; }
+.four { width: 340px; }
+.five { width: 430px; }
+.six { width: 520px; }
+.seven { width: 610px; }
+.eight { width: 700px; }
+.nine { width: 790px; }
+.ten { width: 880px; }
+.eleven { width: 970px; }
+.twelve { width: 1060px; }
+.h-one { height: 70px; }
+.h-two { height: 160px; }
+.h-three { height: 250px; }
+.h-four { height: 340px; }
+
+.margin-bottom-10 { margin-bottom: 10px; }
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.margin-bottom-60 { margin-bottom: 60px; }
+.margin-bottom-100 { margin-bottom: 100px; }
+.m-left-sm { margin-left: 10px; }
+.m-left-md { margin-left: 20px; }
+.margin-right-10 { margin-right: 10px; }
