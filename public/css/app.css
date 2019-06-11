@@ -138,6 +138,20 @@ button, input {
     color: #334ECD;
 }
 
+.icon-box {
+    background-color: #edf0ff;
+    color: #334ECD;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.count {
+    background-color: #f8f8f8;
+    color: #555;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
 .emphasis {
     color: #334ECD;
 }
@@ -152,23 +166,24 @@ button, input {
 
 .container { margin: 0 20px; }
 
-.list {
+.table {
     list-style-type: none;
     padding: 0;
-}
-
-.list li {
-    margin-bottom: 10px;
-    display: block;
     background-color: #fff;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
     border-radius: 6px;
-    padding: 40px 0;
-    text-align: center;
 }
 
-.list li a {
+.table li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.table li:last-child {
+    border: none;
+}
+
+.table li a {
     color: #111;
     text-transform: capitalize;
 }
@@ -179,9 +194,9 @@ button, input {
 
 .popup {
     position: absolute;
-    top: 50px;
-    left: 0;
-    padding: 20px;
+    top: 60px;
+    right: 20px;
+    padding: 40px;
     border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 4px;
@@ -200,6 +215,7 @@ label {
     position: absolute;
     top: 10px;
     right: 10px;
+    color: #f34343;
 }
 
 .footer {
@@ -212,6 +228,7 @@ label {
     background-color: #eee;
     height: 60px;
     border-radius: 6px;
+    position: relative;
 }
 
 /*----- LAYOUT -----*/

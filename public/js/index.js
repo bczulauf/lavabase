@@ -58,3 +58,5 @@ const router = new Router(
     document.getElementById('main')
 );
 router.listen();
+
+const api = new API();
