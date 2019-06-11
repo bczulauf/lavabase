@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/bczulauf/lavabase/issues"
   },
-  "homepage": "https://github.com/bczulauf/lavabase#readme"
+  "homepage": "https://github.com/bczulauf/lavabase#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
 }

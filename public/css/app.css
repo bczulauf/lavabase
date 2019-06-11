@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: system-ui, "Segoe UI", Ubuntu;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     letter-spacing: .03em;
     color: #111;
@@ -14,7 +14,7 @@ h1 {
 
 p {
     line-height: 30px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     color: #555;
 }
@@ -36,7 +36,7 @@ a {
 
 button, input {
     font-family: system-ui, "Segoe UI", Ubuntu;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .background-std {
@@ -110,7 +110,7 @@ button, input {
 
 .breadcrumb {
     padding: 0 20px;
-    height: 40px;
+    height: 60px;
 }
 
 .breadcrumb a {
@@ -159,26 +159,21 @@ button, input {
 .list li {
     margin-bottom: 10px;
     display: block;
+    background-color: #fff;
     border: 1px solid #ddd;
-    width: 160px;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 40px 0;
+    text-align: center;
 }
 
 .list li a {
-    padding: 10px;
-    display: block;
-    width: 100%;
-    text-transform: capitalize;
     color: #111;
+    text-transform: capitalize;
 }
 
 .breadcrumb a {
     color: #888;
-}
-
-.right-side {
-    position: relative;
 }
 
 .popup {
@@ -196,7 +191,7 @@ button, input {
 }
 
 label {
-    font-size: 16px;
+    font-size: 15px;
     display: block;
 }
 
@@ -210,6 +205,12 @@ label {
     height: 100px;
     background-color: #ffffff;
     margin-top: 60px;
+}
+
+.action-bar {
+    background-color: #eee;
+    height: 60px;
+    border-radius: 6px;
 }
 
 /*----- LAYOUT -----*/
@@ -257,6 +258,7 @@ label {
 .margin-bottom-40 { margin-bottom: 40px; }
 .margin-bottom-60 { margin-bottom: 60px; }
 .margin-bottom-100 { margin-bottom: 100px; }
-.m-left-sm { margin-left: 10px; }
-.m-left-md { margin-left: 20px; }
+.margin-left-10 { margin-left: 10px; }
+.margin-left-20 { margin-left: 20px; }
 .margin-right-10 { margin-right: 10px; }
+.margin-right-20 { margin-right: 20px; }
