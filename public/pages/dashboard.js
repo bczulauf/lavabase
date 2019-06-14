@@ -11,25 +11,23 @@ class DashboardPage {
         .then((subscription) => api.getResourceGroups(token, subscription))
         .then((projects) => {
             return this.html = `
-                <div class="flex container">
-                    <div class="twelve">
-                        <div class="flex align-center action-bar">
-                            <div class="margin-left-20 margin-right-10">Projects</div>
-                            <div class="count">${projects.length}</div>
-                            <button id="add-project" class="button button-medium button-secondary margin-right-20 float-right">Add New Project</button>
-                            <div class="popup" id="project-popup">
-                                <i class="far fa-window-close" id="close-popup"></i>
-                                <form id="create-resource-form">
-                                    <label class="margin-bottom-10">Enter Project Name</label>
-                                    <input type="text" name="resourceGroupName" class="input margin-bottom-10 three" />
-                                    <button class="button button-secondary button-medium">Create</button>
-                                </form>
-                            </div>
+                <div class="container">
+                    <div class="flex align-center action-bar">
+                        <div class="margin-left-20 margin-right-10">Projects</div>
+                        <div class="count">${projects.length}</div>
+                        <button id="add-project" class="button button-medium button-secondary margin-right-20 float-right">Add New Project</button>
+                        <div class="popup" id="project-popup">
+                            <i class="far fa-window-close" id="close-popup"></i>
+                            <form id="create-resource-form">
+                                <label class="margin-bottom-10">Enter Project Name</label>
+                                <input type="text" name="resourceGroupName" class="input margin-bottom-10 three" />
+                                <button class="button button-secondary button-medium">Create</button>
+                            </form>
                         </div>
-                        <ul id="projects-list" class="table">
-                            ${projects.map((project) => `<li><a href='#dashboard/project/${project.name}' class="flex align-center"><i class="far fa-folder icon-box margin-right-10"></i><div>${project.name}</div></a></li>`).join('')}
-                        </ul>
                     </div>
+                    <ul id="projects-list" class="table">
+                        ${projects.map((project) => `<li><a href='#dashboard/project/${project.name}' class="flex align-center"><i class="far fa-folder icon-box margin-right-10"></i><div>${project.name}</div></a></li>`).join('')}
+                    </ul>
                 </div>
             `;
         });
