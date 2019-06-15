@@ -192,17 +192,23 @@ button, input {
     color: #888;
 }
 
+.popup-wrapper {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .2);
+    align-items: center;
+    justify-content: center;
+}
+
 .popup {
-    position: absolute;
-    top: 60px;
-    right: 20px;
     padding: 40px;
     border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 4px;
-}
-
-#project-popup {
     display: none;
 }
 
@@ -228,7 +234,6 @@ label {
     background-color: #eee;
     height: 60px;
     border-radius: 6px;
-    position: relative;
 }
 
 /*----- LAYOUT -----*/

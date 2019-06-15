@@ -41,6 +41,8 @@ function loginCallback(error, token) {
     }
 }
 
+const api = new API();
+const util = new Util();
 const router = new Router(
     {
         home: new Layout (
@@ -58,5 +60,3 @@ const router = new Router(
     document.getElementById('main')
 );
 router.listen();
-
-const api = new API();

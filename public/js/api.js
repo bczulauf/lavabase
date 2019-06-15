@@ -122,10 +122,10 @@ class API {
         xhr.send(JSON.stringify({
               "location": "West US 2",
               "sku": {
-                    "name": "B1",
-                    "tier": "Basic",
-                    "size": "B1",
-                    "family": "B",
+                    "name": "F1",
+                    "tier": "Free",
+                    "size": "F1",
+                    "family": "F",
                     "capacity": 1
                 }
         }));
@@ -177,6 +177,7 @@ class API {
         xhr.open('PUT', `https://management.azure.com/subscriptions/${subscriptionId}/resourceGroups/${resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/${dbAccountName}?api-version=2015-04-08`, true);
         xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.send();
 
         return new Promise(function(resolve, reject) {
             xhr.onreadystatechange = function () {
