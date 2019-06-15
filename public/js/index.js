@@ -49,13 +49,18 @@ const router = new Router(
             new HomePage(),
             new Footer()
         ),
+        "dashboard/project/(.*)": new Layout (
+            new Header(),
+            new Breadcrumb(),
+            new ProjectPage(),
+            new Footer()
+        ),
         dashboard: new Layout (
             new Header(),
             new Breadcrumb(),
             new DashboardPage(),
             new Footer()
         )
-
     },
     document.getElementById('main')
 );

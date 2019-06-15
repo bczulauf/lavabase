@@ -60,7 +60,7 @@ class DashboardPage {
             var resourceGroupName = new FormData(evt.target).get('resourceGroupName');
 
             this.createNewProject(this.token, this.subscription.subscriptionId, resourceGroupName).then((response) => {
-                router.navigate(`project/${resourceGroupName}`)
+                router.navigate(`dashboard/project/${resourceGroupName}`)
             });
         }, false);
     }
